@@ -25,22 +25,20 @@ const number = function(busStops){
   // list.forEach(item => {
   //   console.log(item);
   // });
-  for (let i = 0; i < list.length; i++) {
+  for (let i = 0; i < busStops.length; i++) {
     // add first int of each array in the list
     // subtract second int of each array in the list
-    for (let j = 0; j < list[i].length; j++) {
-      console.log(list[i][j]);
+    for (let j = 0; j < busStops[i].length; j++) {
+      // console.log(list[i][j]);
       if (j === 0) {
-        numPeople += list[i][j];
+        numPeople += busStops[i][j];
       }
       if (j === 1) {
-        numPeople -= list[i][j];
+        numPeople -= busStops[i][j];
       }
-      console.log(numPeople);
     }
   }
+  return numPeople;
 };
-
-number(list);
 
 module.exports = number;

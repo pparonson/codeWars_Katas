@@ -1,5 +1,3 @@
-// const R = require('ramda');
-
 const languages = require('./data.js');
 
 /*
@@ -13,12 +11,9 @@ const languages = require('./data.js');
 const greet = language => {
   for (let property in languages) {
     if (property === language) {
-      console.log(languages[property]);
       return languages[property];
     }
   }
-
-  console.log(languages['english']);
   return languages['english'];
 };
 

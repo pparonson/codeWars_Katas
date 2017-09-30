@@ -19,7 +19,7 @@ const list = [
  * The second value in the first integer array is 0, since the bus is empty in
  * the first bus stop.
 */
-const number = function(busStops){
+const number = busStops => {
   // set a counter for number of people
   let numPeople = 0;
   // list.forEach(item => {

@@ -9,7 +9,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
     "expect": "^21.2.0",
     "mocha": "^3.5.3"
+  },
+  "dependencies": {
+    "request": "^2.83.0"
   }
 }
